@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <title>價目表</title>
+  <meta charset="utf-8">
+  <style>
+    ul {
+        display: inline-flex;
+        list-style-type: none;
+        justify-content: flex-end; /* 從右往左排列 */
+      }
+      ul li {
+        padding: 0 10px;
+        font-size: 20px;
+      }
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #ccc; /* 加入底部邊框來分隔區塊 */
+        
+      }
+      #container {
+        max-width: 1200px;
+        margin:auto;
+      }
+    
+      
+      .nav-link{
+       color: blue;
+       font-weight: bold;
+        
+      }
+      h1{
+        color: #31241e;
+        font-size: 60px;
+      }
+      p{
+        color: black;
+        font-weight: bold;
+      }
+      a{
+        color: #31241e;
+        text-decoration: none;
+
+      }
+      body {
+/*        background: #edcfbb;*/
+        background-color: #ecf1af;
+        max-width: 1200px;
+        margin: auto;
+      }
+    /* 價目表外部容器 */
+    .price-table {
+      max-width: 800px;
+      margin: 0 auto;
+      width: 80%; /* 調整價目表寬度 */
+      margin: 0 auto; /* 讓價目表置中 */
+      border: 2px solid gray; /* 黑色弧線 10px */
+      border-radius: 10px; /* 弧線半徑為 10px */
+      padding: 20px; /* 增加內側間距 */
+    }
+    
+    /* 表格樣式 */
+    .price-table table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center; /* 讓表格內容置中 */
+      background-color: pink;
+      border-radius: 10px;
+    }
+    
+    /* 表格頭部樣式 */
+    .price-table th {
+      background-color: pink;
+      padding: 10px;
+      text-align: center; /* 讓表格標題置中 */
+      border-radius: 10px;
+      font-size: 20px;
+      border-bottom: 1px solid gray; /* 黑色弧線 10px */
+      
+   
+    }
+    
+    /* 表格內容行樣式（奇數行和偶數行背景色交替） */
+    .price-table tr {
+      background-color: pink;
+      font-size: 20px;
+      margin: 10px;
+      
+    }
+    
+    /* 表格單元格樣式 */
+    .price-table td {
+      padding: 10px;
+      
+    }
+    h2{
+      text-align: center;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img width="150px" src="./img/logo.PNG" alt="logo">
+
+      <span style="font-size: 50px; color: #424242; font-family: Verdana;">QiaoQiao</span>
+
+      <ul style="">
+        <li class="nav-link"><a href="./index.html">首頁</a></li>
+        <li class="nav-link"><a href="./cost.html">價目表</a></li>
+        <li class="nav-link"><a href="#">關於我們</a></li>
+        <li class="nav-link"><a href="#">常見問題</a></li>
+        <li class="nav-link"><a href="./beauty2.html">預約表單</a></li>
+      </ul>
+      <div style="border-bottom: #424242;"></div>
+    </div>
+    <h2>價目表</h2>
+  <div class="price-table">
+    
+    <table>
+      <thead>
+        <tr>
+          <th>項目</th>
+          <th>價格</th>
+          <th>說明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>美瞳線</td>
+          <td>$4800</td>
+          <td>提神，晶亮眼眸，不暈妝</td>
+        </tr>
+        <tr>
+          <td>輕氧霧眉</td>
+          <td>$6000</td>
+          <td>自然通透的風格，看起來就像天生</td>
+        </tr>
+        <tr>
+          <td>好氣色嫩唇</td>
+          <td>$8800</td>
+          <td>矯正唇部色差，暗沉，擁有寶寶般粉嫩感</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

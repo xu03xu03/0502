@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q美學</title>
+    <!-- 引入 Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-brand img {
+            max-width: 150px;
+            height: auto;
+        }
+        header {
+            text-align: center; /* 文字置中 */
+            background-color: rgba(213, 197, 245, 0.726); /* header 背景色 */
+        }
+        header h1 {
+            color: #333; /* h1 標題顏色 */ 
+        }
+
+        .navbar {
+             /*position: fixed; /* 設定導覽列固定在畫面上 */
+             /*top: 0; /* 距離畫面頂部的距離為 0 */
+             right: 0; /* 將導覽列靠右對齊 */
+             left: auto; /* 不設定左側對齊，由右側自動調整 */
+             width: 100%; /* 寬度佔滿整個畫面 */
+             z-index: 1000; /* 設定堆疊順序，使導覽列在最上層 */
+        }
+        .card{
+            width: 300px;
+            box-shadow:1px 1px 5px 2px #b9f;
+            padding: 15px;
+            border-radius:15px;
+            margin-top: 20px;
+        }
+       .card img{
+        width:100%;
+        border-radius:15px;
+        aspect-ratio:1;
+        object-fit:cover;
+        object-position:center;
+
+        }
+       .card h2{
+        color: #dc3545;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        }
+       .card p{
+        color: #6c757d;
+        font-weight: bold;
+        font-size: 20px;
+        }
+       .card a{
+        color: #86b7fe;
+        text-decoration: none;
+        font-weight: bold;
+        }
+        .container{
+            display: flex;
+            gap:20px;
+        }
+
+        #back-to-top {
+      display: none; /* 初始設定為隱藏 */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: gray;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- 導覽列 Navbar 開始 -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light mb-4">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.PNG" alt="Q美學">
+            </a>
+            <!-- 導覽列折疊按鈕 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- 導覽列內容 -->
+            <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- 導覽連結 - 我要預約 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./beauty2.html"><strong>我要預約</strong></a>
+                    </li>
+                    <!-- 導覽連結 - 價目表 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cost.html"><strong>價目表</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html"><strong>首頁</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- 導覽列 Navbar 結束 -->
+    
+    <main class="container">
+        <div class="card">
+            <div class="img-box">
+                <img src="https://media.istockphoto.com/id/1485407040/photo/youth-beauty.jpg?s=612x612&w=0&k=20&c=rb1iH-6xP8ZLjBzj3B7YnHFDYMtk70N5VEIw5DV4eSM=" alt="">
+            </div>
+            <div class="text-box">
+                <h2>晶漾美瞳線</h2>
+                <p>晶亮眼眸，提神<br>不暈妝</p>
+                <a href="">看更多</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box">
+                <img src="https://media.istockphoto.com/id/1480953234/photo/beautiful-african-american-woman-combing-her-eyebrows-with-brush-tool-isolated-on-beige.jpg?s=612x612&w=0&k=20&c=3BF6uhpAPg4lMNlpAC7kWGSrTsVn_hfPSAqG18Xem4Y=" alt="">
+            </div>
+            <div class="text-box">
+                <h2>輕氧系霧眉</h2>
+                <p>自然通透的風格<br>看起來就像天生</p>
+                <a href="">看更多</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-box">
+                <img src="https://media.istockphoto.com/id/160577061/photo/close-up-of-female-lips-wearing-glossy-lipstick.jpg?s=612x612&w=0&k=20&c=-ADOztgQG8MJPldfl1gsLfSD95dcE9KCvP4Nu6_IDSA=" alt="">
+            </div>
+            <div class="text-box">
+                <h2>寶貝粉嫩唇</h2>
+                <p>矯正唇部色差，暗沉<br>擁有寶寶般粉嫩感</p>
+                <a href="">看更多</a>
+            </div>
+        </div>
+    </main>
+    
+    
+    <h3 style="height: 5000px;"></h3>
+    <button id="back-to-top">TOP</button>
+
+    <script>
+      const backToTopBtn = document.getElementById('back-to-top');
+  
+      window.addEventListener('scroll', () => {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      });
+  
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // 平滑滾動效果
+        });
+      });
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   
+    
+    <footer class=" py-4">
+        <div>
+            <p>&copy; 2024 QIAO美學</p>
+        </div>
+    </footer>
+   
+    <!-- 引入 Bootstrap 5 JS，確保在 body 結尾標籤之前 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/styles.js"></script>
+</body>
+</html>
