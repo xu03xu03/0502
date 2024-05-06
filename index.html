@@ -11,6 +11,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            position: relative;
         }
         .navbar-brand img {
             max-width: 150px;
@@ -70,6 +71,14 @@
             justify-content: center;
             gap: 15px;
         }
+        #logo{
+            color:blue;
+            width: 250px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 9;
+        }
         #scrollToTopBtn {
   display: none;
   position: fixed;
@@ -126,7 +135,7 @@
         </nav>
     </header>
     <!-- 導覽列 Navbar 結束 -->
-    
+    <img id="logo" src="./img/ig.png" alt="追蹤我">
     <main class="container">
         <div class="card">
             <div class="img-box">
@@ -169,7 +178,10 @@
             </div>
         </div>
     </main>
-    <h3 style="height: 1000px;"></h3>
+    
+    <h3 style="height: 300px;"></h3>
+    
+    
     <button onclick="scrollToTop()" id="scrollToTopBtn" title="回到頂部">↑</button>
     
   
